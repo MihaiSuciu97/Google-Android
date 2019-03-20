@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="33sp"
+            android:layout_gravity="left"
+            android:background="#FF7E6C"
+
+            android:text="This is an\norange\nTextView"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#A4D6B8"
+            android:gravity="center"
+
+            android:padding="33sp"
+            android:text="This is a green\nTextView"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#83E1CF"
+            android:gravity="center"
+            android:padding="33sp"
+            android:text="This is a blue\nTextView"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5sp"
+            android:background="#83E1CF"
+            android:padding="30sp"
+            android:text="THIS IS A\nButton" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_margin="5sp"
+            android:background="#A4D6B8"
+            android:padding="30sp"
+            android:text="THIS IS A GREEN\nButton"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#E9B419"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="This is an EditText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="This is a new EditText" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#83E1CF">
+
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Notify me :)"
+            android:padding="5sp"/>
+
+        <Switch
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Auto backup" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#83E1CF">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="1"
+            style="?android:attr/ratingBarStyleSmall"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#83E1CF">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
+
