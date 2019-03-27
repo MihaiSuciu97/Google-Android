@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_prompt"/>
+</RelativeLayout>
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:text="Login"
+        android:textSize="50dp"
+        android:textColor="#FF0000"
+        android:textAllCaps="true"/>
+    <EditText
+        android:id="@+id/EmailEditView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/loginTextView"
+        android:text="Email"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/PhoneEditView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/EmailEditView"
+        android:text="Phone"
+        android:textSize="30dp"/>
+    <CheckBox
+        android:id="@+id/CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="I accept T&amp;C"
+        android:layout_below="@+id/PhoneEditView"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="SUBMIT"
+        android:layout_below="@id/CheckBox"
+        android:background="#0000FF"
+        android:textColor="#FFFFFF"/>
+
+
+
+
+</RelativeLayout>-->
+
+<!--<WebView
+    android:id="@+id/webview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+</WebView>-->
+
+
+
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="#0000FF"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#00FF00"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#FF0000"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"/>
+
+</FrameLayout>-->
+
+
+
+
+
+<!--<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#100000"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#10FF00"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#0000FF"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#F00FFF"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#100000"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#10FF00"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#0000FF"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#F00FFF"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>-->
