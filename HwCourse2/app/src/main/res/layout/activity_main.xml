@@ -6,41 +6,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:orientation="horizontal">
-         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="33sp"
-            android:layout_gravity="left"
-            android:background="#FF7E6C"
-
-            android:text="This is an\norange\nTextView"
-            android:textColor="#FFFFFF"
-            android:gravity="center"/>
-
-         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_horizontal"
-            android:background="#A4D6B8"
-            android:gravity="center"
-
-            android:padding="33sp"
-            android:text="This is a green\nTextView"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="#83E1CF"
-            android:gravity="center"
-            android:padding="33sp"
-            android:text="This is a blue\nTextView"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -174,8 +139,6 @@
 
         app:layout_constraintStart_toStartOf="@id/text1"
         app:layout_constraintTop_toTopOf="parent"
-
-
         />
 
     <TextView
@@ -208,6 +171,35 @@
         app:layout_constraintBottom_toBottomOf="@id/text1"
         app:layout_constraintTop_toTopOf="@id/text1"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="5sp"
+        android:background="#83E1CF"
+        android:padding="30sp"
+        android:text="THIS IS A\nButton"
+
+        app:layout_constraintTop_toBottomOf="@id/text1"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+
+        app:layout_constraintTop_toBottomOf="text2"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5sp"
+        android:background="#A4D6B8"
+        android:padding="30sp"
+        android:text="THIS IS A GREEN\nButton"
+    app:layout_constraintBottom_toBottomOf="@id/text3"
+        />
 </android.support.constraint.ConstraintLayout>
 
 
