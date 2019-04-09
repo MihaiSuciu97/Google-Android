@@ -87,7 +87,4 @@ public class MyActivity extends AppCompatActivity {
         Log.d("LIFECYCLE_TAG","onDestroy");
     }
 
-
-
-
 }
