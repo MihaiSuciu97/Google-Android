@@ -26,7 +26,8 @@ public class MyActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(MyActivity.this,MainActivity.class);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.google.com"));
                 startActivity(intent);
             }
 //            public void onClick(View v){
