@@ -1,5 +1,7 @@
 package com.example.activities;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,6 +10,7 @@ import android.widget.TextView;
 
 public class MyActivity extends AppCompatActivity {
     private TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -20,6 +23,18 @@ public class MyActivity extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
         Log.d("LIFECYCLE_TAG","onStart");
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MyActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+//            public void onClick(View v){
+//                Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+//                browserIntent.setData( Uri.parse("http://www.google.com"));
+//                startActivity(browserIntent);
+//            }
+        });
     }
 
     @Override
