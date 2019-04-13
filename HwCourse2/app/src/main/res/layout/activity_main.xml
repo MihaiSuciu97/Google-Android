@@ -173,33 +173,36 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_margin="5sp"
         android:background="#83E1CF"
-        android:padding="30sp"
-        android:text="THIS IS A\nButton"
+        android:padding="33sp"
 
-        app:layout_constraintTop_toBottomOf="@id/text1"/>
+        android:text="THIS IS A\nButton"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+    android:padding="20dpo"
         android:src="@drawable/img"
-
-        app:layout_constraintTop_toBottomOf="text2"/>
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
 
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_margin="5sp"
+
         android:background="#A4D6B8"
-        android:padding="30sp"
+        android:padding="33sp"
         android:text="THIS IS A GREEN\nButton"
-    app:layout_constraintBottom_toBottomOf="@id/text3"
-        />
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        tools:layout_editor_absoluteY="127dp" />
 </android.support.constraint.ConstraintLayout>
 
 
