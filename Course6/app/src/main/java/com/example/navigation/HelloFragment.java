@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HelloFragment extends Fragment {
 
@@ -22,7 +23,10 @@ public class HelloFragment extends Fragment {
         }
     }
 */
-    private TextView helloLabel;
+    //private TextView helloLabel;
+
+
+    //private Listener listener;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -35,10 +39,21 @@ public class HelloFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        view.findViewById(R.id.button).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //((MainActivity) getActivity()).theseAreNumbers(10,25);
+                Toast.makeText(getActivity(),"Hello fragment",Toast.LENGTH_LONG).show();
+            }
+        });
         //((TextView) view.findViewById(R.id.hello_label)).setText(label);
-        this.helloLabel=((TextView) view.findViewById(R.id.hello_label));
+        //this.helloLabel=((TextView) view.findViewById(R.id.hello_label));
     }
-    public void setLabel(String label){
+    /*public void setLabel(String label){
         helloLabel.setText(label);
-    }
+    }*/
+    /*public void setListener(Listener listener) {
+        this.listener = listener;
+    }*/
+
 }
