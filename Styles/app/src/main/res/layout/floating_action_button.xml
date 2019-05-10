@@ -9,9 +9,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-  <Button
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Request camera"
-      android:id="@+id/request_button"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:rippleColor="@color/cerulean"
+        android:src="@drawable/ic_autorenew_black_24dp"/>
+
 </LinearLayout>
